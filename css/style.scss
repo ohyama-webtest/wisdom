@@ -150,6 +150,10 @@ header {
 
       .header-nav-left {
         margin-right: auto;
+
+        img {
+          width: 130px;
+        }
       } // left
       .header-nav-right {
         display: flex;
@@ -223,13 +227,8 @@ header {
     } // h2
     .bottom-img {
       margin-top: 70px;
-      height: 30vw;
-      max-height: 350px;
-      background-color: rgba($color: pink, $alpha: 0.3);
-      min-height: 220px;
 
       @include mq(sp) {
-        min-height: 160px;
         margin-top: 50px;
       }
     }
@@ -339,7 +338,7 @@ header {
     width: 45%;
     max-width: 600px;
     aspect-ratio: 1 / 1;
-    background-image: url(../images/fv-left-circle.jpg);
+    background-image: url(../images/fv-left-circle.png);
     background-size: cover;
     border-radius: 50%;
     z-index: -1;
@@ -349,14 +348,28 @@ header {
     }
   }
   .left-circle {
-    top: -270px;
+    top: -240px;
     left: -200px;
+
+    @include mq(tab){
+      top: -200px;
+      left: -180px;
+    }
+    @include mq(sp){
+      top: -240px;
+      left: -180px;
+    }
+    
   } // left-circle
   .right-circle {
-    bottom: -220px;
-    right: -220px;
-    background-image: url(../images/fv-right-circle.jpg);
+    bottom: -180px;
+    right: -180px;
+    background-image: url(../images/fv-right-circle.png);
+    @include mq(sp){
+      bottom: -250px;
+    }
   } // right-circle
+
 }
 // fv終了
 
@@ -366,6 +379,7 @@ header {
   padding-top: 80px;
   padding-bottom: 80px;
   color: white;
+  margin-top: -7px;
 
   @include mq(sp) {
     padding: 65px 0;
@@ -470,6 +484,9 @@ header {
 
           img {
             max-width: 200px;
+            width: 180px;
+            object-fit: cover;
+            height: 200px;
             width: 100%;
           }
         } // img
@@ -783,7 +800,7 @@ header {
       margin: 80px auto 0;
 
       @include mq(tab) {
-        gap: 20px;
+        gap: 30px;
         margin-top: 60px;
         margin-left: 20px;
       }
@@ -959,13 +976,14 @@ header {
     .flow-items {
       display: flex;
       gap: 40px;
-      margin-top: 100px;
+      margin-top: 140px;
       position: relative;
       z-index: 1;
 
       @include mq(tab){
         flex-direction: column;
         gap: 100px;
+        margin-top: 100px;
       }
 
       &::before {
@@ -991,12 +1009,26 @@ header {
 
         .img {
           text-align: center;
-          max-width: 300px;
+          max-width: 220px;
           margin: 0 auto;
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          top: -50px;
+          top: -100px;
+          
+          @include mq(tab){
+            top: -70px;
+          }
+
+          img {
+            width: 100%;
+            width: 180px;
+
+            @include mq(tab){
+              width: 150px;
+
+            }
+          }
         } // img
         h3 {
           font-size: 24px;
@@ -1346,6 +1378,11 @@ footer {
     .logo {
       margin-top: 30px;
       font-weight: bold;
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
     }
     .copyright{
       margin-top: 30px;

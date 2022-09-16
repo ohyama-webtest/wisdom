@@ -1136,8 +1136,32 @@ header {
 
             .img {
 
-              img {
+              .icon {
+                text-align: center;
+                background-color: #B4E1E7;
+                aspect-ratio: 1 / 1;
                 width: 100%;
+                border-radius: 100vh;
+                position: relative;
+                
+                i {
+                  font-size: 80px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 100px;
+                  
+                  @include mq(pc){
+                    font-size: 65px;
+                  }
+                  @include mq(tab){
+                    font-size: 80px;
+                  }
+                  @include mq(sp){
+                    font-size: 110px;
+                  }
+                }
               }
             }
             p {

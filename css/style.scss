@@ -294,20 +294,20 @@ header {
 // header-spかいし
 .header-sp {
   transform: translateX(100%);
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   @include mq(pc){
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 30px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: $theme-gray;
     transition: transform .3s;
     

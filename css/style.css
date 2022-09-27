@@ -1844,3 +1844,60 @@ footer .container .copyright {
     font-size: 14px;
   }
 }
+
+/*　ーーーーーーーーーーーーーーーーーーーーー
+  archive.html開始
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.archive {
+  margin-top: 160px;
+  margin-bottom: 120px;
+}
+
+.archive .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.archive .container h2 {
+  color: #3bb5c4;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.archive .container a .archive-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.archive .container a .archive-item:hover {
+  background-color: #f4f4f4;
+}
+
+.archive .container a .archive-item .item-top {
+  display: flex;
+  gap: 20px;
+}
+
+.archive .container a .archive-item .item-top .category {
+  background-color: #BB272E;
+  color: white;
+  font-size: 12px;
+  padding: 2px 12px;
+}
+
+.archive .container a .archive-item .item-title {
+  color: #555;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .archive .container a .archive-item .item-title {
+    font-size: 16px;
+  }
+}
+
+/*　ーーーーーーーーーーーーーーーーーーーーー
+  archive.html終了
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/

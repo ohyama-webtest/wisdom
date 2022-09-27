@@ -1649,3 +1649,66 @@ footer {
   }
 }
 // footer終了
+
+
+/*　ーーーーーーーーーーーーーーーーーーーーー
+  archive.html開始
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+.archive {
+  margin-top: 160px;
+  margin-bottom: 120px;
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+
+    h2 {
+      color: $theme-blue;
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    } // h2
+    a {
+      
+      .archive-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        
+        &:hover {
+          background-color: $theme-gray;
+        }
+        
+        .item-top {
+          display: flex;
+          gap: 20px;
+          
+          time {
+            
+          } // time
+          .category {
+            background-color: #BB272E;
+            color: white;
+            font-size: 12px;
+            padding: 2px 12px;
+          } // category
+        } // top
+        .item-title {
+          color: #555;
+          margin-top: 10px;
+
+          @include mq(sp){
+            font-size: 16px;
+          }
+        } // item-title
+      } // item
+    }
+  } // container
+}
+
+
+
+/*　ーーーーーーーーーーーーーーーーーーーーー
+  archive.html終了
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/

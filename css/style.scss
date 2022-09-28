@@ -1045,7 +1045,7 @@ header {
 .contact-btn-wrapper {
   text-align: center;
   background-color: $theme-blue;
-  padding: 60px 0;
+  padding: 110px 0;
 
   h2 {
     color: white;
@@ -1059,7 +1059,7 @@ header {
   .btn-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 35px;
     gap: 30px;
 
     @include mq(tab){
@@ -1590,15 +1590,20 @@ header {
 
 // twitter開始
 .twitter {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 80px auto;
   width: 100%;
-  height: 300px;
-  background-color: #ccc;
-  line-height: 300px;
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
+  height: 400px;
+  overflow: scroll;
+  font-size: 20px;
+}
+.twitter-timeline {
+  max-width: 00px;
+  height: 500px;
+
+}
+.timeline-InformationCircle-widgetParent {
+  display: none !important;
 }
 // twitter終了
 

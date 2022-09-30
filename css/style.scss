@@ -341,7 +341,7 @@ header {
     
     &:last-child {
       border: none;
-      line-height: 40px;
+      // line-height: 40px;
     }
     
     a {
@@ -350,7 +350,6 @@ header {
       height: 55px;
       padding-top: 10px;
       font-size: 12px;
-
     }
   }
 }
@@ -1490,6 +1489,14 @@ header {
           }
           img {
             width: 100%;
+            max-width: 130px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+
+            @include mq(sp) {
+              max-width: 240px;
+            }
           }
         }
         .right {
